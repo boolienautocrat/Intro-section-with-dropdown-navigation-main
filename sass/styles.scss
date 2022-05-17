@@ -1,0 +1,68 @@
+@use 'variables' as v;
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: "375px") {
+
+    .logo-section {
+        justify-content: space-between;
+        @include v.padding (20px, 15px, 20px, 15px);
+        display: flex;
+
+        img {
+            height: fit-content;
+        }
+    }
+
+    .hero-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .reading-sec {
+        text-align: center;
+
+        h1 {
+            margin: 40px 0 0;
+            font-size: 2.25rem;
+        }
+
+        p {
+            margin: 20px 20px 0;
+            line-height: 1.4;
+            color: v.$grey;
+            font-size: 16px;
+        }
+
+        button {
+            @include v.margin (25px, 0, 0, 30px);
+            background: #000;
+            color: #fff;
+            font-weight: 500;
+            @include v.padding(13px, 25px, 25px, 13px);
+            font-size: 16px;
+            border-radius: 15px;
+        }
+
+        div {
+            @include v.margin (20px, 0, 0, 80px);
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            @include v.padding (0, 20px, 20px, 0);
+
+            img {
+                height: fit-content;
+                width: 20%;
+            }
+        }
+    }
+}
