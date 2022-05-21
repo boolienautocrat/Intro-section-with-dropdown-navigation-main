@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 .attribution {
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -11,7 +11,7 @@
 
 @media screen and (max-width: "375px") {
 
-    .logo-section {
+    nav {
         justify-content: space-between;
         @include v.padding (20px, 15px, 20px, 15px);
         display: flex;
