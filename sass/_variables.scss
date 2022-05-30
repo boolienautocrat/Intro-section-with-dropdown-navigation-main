@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    background-color: lighten(#fff, 50%);
     box-sizing: border-box;
     font-family: Epilogue;
     font-size: 18px;
@@ -26,6 +27,7 @@ ul {
     margin-right: $right;
     margin-bottom: $bottom;
 }
+
 @mixin padding ($top, $left, $right, $bottom) {
     padding-top: $top;
     padding-left: $left;
