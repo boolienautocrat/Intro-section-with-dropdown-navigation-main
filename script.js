@@ -7,6 +7,9 @@ var downFeat = document.querySelector(".icon-down-feat")
 var downComp = document.querySelector(".icon-down-comp")
 var features = document.querySelector(".features")
 var company = document.querySelector(".company-info")
+var lis = document.querySelector(".features").childNodes
+var lis2 = document.querySelector(".company-info").childNodes
+var reloadLi = [lis[1], lis[3], lis[5], lis[7], lis2[1], lis2[3], lis2[5]]
 
 iconHam.addEventListener("click", function () {
     if (this.classList.contains("ham-menu")) {
@@ -50,4 +53,10 @@ compBtn.addEventListener("click", function () {
         this.classList.add("company-btn")
         company.style.display = "none"
     }
+})
+
+reloadLi.forEach((e) => {
+    e.addEventListener("click", () => {
+        location.reload()
+    })
 })
