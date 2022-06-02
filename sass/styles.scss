@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .attribution {
     font-size: 14px;
@@ -10,10 +10,9 @@
 }
 
 @media screen and (max-width: "768px") {
-
     nav {
         justify-content: space-between;
-        @include v.padding (15px, 15px, 15px, 15px);
+        @include v.padding(15px, 15px, 15px, 15px);
         display: flex;
 
         img {
@@ -76,7 +75,7 @@
                     flex-direction: column;
                     gap: 10px;
                     padding: 0;
-                    @include v.margin (30px, 0, 0, 0);
+                    @include v.margin(30px, 0, 0, 0);
                     align-items: center;
 
                     button {
@@ -132,7 +131,7 @@
         }
 
         button {
-            @include v.margin (25px, 0, 0, 30px);
+            @include v.margin(25px, 0, 0, 30px);
             background: #000;
             color: #fff;
             font-weight: 500;
@@ -142,16 +141,112 @@
         }
 
         div {
-            @include v.margin (20px, 0, 0, 80px);
+            @include v.margin(20px, 0, 0, 80px);
             align-items: center;
             justify-content: space-between;
             display: flex;
-            @include v.padding (0, 20px, 20px, 0);
+            @include v.padding(0, 20px, 20px, 0);
 
             img {
                 height: fit-content;
                 width: 20%;
             }
         }
+    }
+}
+
+@media screen and (min-width: "768px") {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav {
+        gap: 80px;
+        margin: 20px 30px;
+        align-items: center;
+        display: flex;
+
+        &>img {
+            height: fit-content;
+        }
+    }
+
+    .nav-menu {
+        &>div {
+            gap: 94%;
+            align-items: center;
+            display: flex;
+
+            &>ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 35px;
+                color: v.$grey;
+                font-size: 17px;
+
+                .features-btn,
+                .company-btn,
+                .feat-active,
+                .comp-active {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-left: 5px;
+                    }
+                }
+
+                .features {
+                    right: 1066.8px;
+
+                    img {
+                        margin-right: 7px;
+                    }
+                }
+
+                .features,
+                .company-info {
+                    li {
+                        cursor: pointer;
+                        width: fit-content;
+                    }
+
+                    border-radius: 10px;
+                    top: 70px;
+                    display: none;
+                    flex-direction: column;
+                    gap: 10px;
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 20px 20px;
+                    box-shadow: 0px 10px 24px 10px rgba(0, 0, 0, 0.14),
+                    0px 16px 30px 10px rgba(0, 0, 0, 0.12),
+                    0px 8px 5px -7px rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            .cta {
+                display: flex;
+
+                .login {
+                    border: none;
+                }
+
+                button {
+                    padding: 8px 20px;
+                    color: v.$grey;
+                    font-size: 16px;
+                    background: #fff;
+                    border-radius: 10px;
+                    border-color: v.$grey;
+                }
+            }
+        }
+    }
+
+    .hero-img {
+        margin-top: 200px;
     }
 }

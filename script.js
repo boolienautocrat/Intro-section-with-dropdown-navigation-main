@@ -27,6 +27,7 @@ iconHam.addEventListener("click", function () {
     }
 })
 
+
 featBtn.addEventListener("click", function () {
     if (this.classList.contains("features-btn")) {
         downFeat.src = "/images/icon-arrow-up.svg"
@@ -60,3 +61,9 @@ reloadLi.forEach((e) => {
         location.reload()
     })
 })
+
+if (window.matchMedia('(max-width: 768px)').matches) {
+    iconHam.style.display = "block"
+} else {
+    iconHam.style.display = "none"
+}
