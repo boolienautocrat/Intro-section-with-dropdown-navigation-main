@@ -9,7 +9,9 @@ var features = document.querySelector(".features")
 var company = document.querySelector(".company-info")
 var lis = document.querySelector(".features").childNodes
 var lis2 = document.querySelector(".company-info").childNodes
-var reloadLi = [lis[1], lis[3], lis[5], lis[7], lis2[1], lis2[3], lis2[5]]
+var buttons = document.querySelector(".cta").childNodes
+var navItems = document.querySelector(".nav-menu div ul").childNodes
+var reloadLi = [lis[1], lis[3], lis[5], lis[7], lis2[1], lis2[3], lis2[5], buttons[1], buttons[3], navItems[5], navItems[7]]
 
 iconHam.addEventListener("click", function () {
     if (this.classList.contains("ham-menu")) {

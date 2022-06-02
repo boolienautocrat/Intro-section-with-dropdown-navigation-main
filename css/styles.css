@@ -205,6 +205,12 @@ nav .nav-menu div ul .company .features li img {
     color: hsl(0deg, 0%, 41%);
     font-size: 17px;
   }
+  .nav-menu > div > ul > li {
+    cursor: pointer;
+  }
+  .nav-menu > div > ul > li:hover {
+    color: hsl(0deg, 0%, 8%);
+  }
   .nav-menu > div > ul .features-btn,
 .nav-menu > div > ul .company-btn,
 .nav-menu > div > ul .feat-active,
@@ -218,6 +224,12 @@ nav .nav-menu div ul .company .features li img {
 .nav-menu > div > ul .feat-active img,
 .nav-menu > div > ul .comp-active img {
     margin-left: 5px;
+  }
+  .nav-menu > div > ul .features-btn:hover,
+.nav-menu > div > ul .company-btn:hover,
+.nav-menu > div > ul .feat-active:hover,
+.nav-menu > div > ul .comp-active:hover {
+    color: hsl(0deg, 0%, 8%);
   }
   .nav-menu > div > ul .features {
     right: 1066.8px;
@@ -255,6 +267,10 @@ nav .nav-menu div ul .company .features li img {
     background: #fff;
     border-radius: 10px;
     border-color: hsl(0deg, 0%, 41%);
+  }
+  .nav-menu > div .cta button:hover {
+    color: hsl(0deg, 0%, 8%);
+    border-color: hsl(0deg, 0%, 8%);
   }
 
   .hero-img {

@@ -178,6 +178,15 @@
             display: flex;
 
             &>ul {
+
+                &>li {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: hsl(0, 0%, 8%);
+                    }
+                }
+
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -196,6 +205,13 @@
                     img {
                         margin-left: 5px;
                     }
+                }
+
+                .features-btn:hover,
+                .company-btn:hover,
+                .feat-active:hover,
+                .comp-active:hover {
+                    color: hsl(0, 0%, 8%);
                 }
 
                 .features {
@@ -241,6 +257,11 @@
                     background: #fff;
                     border-radius: 10px;
                     border-color: v.$grey;
+                }
+
+                button:hover {
+                    color: hsl(0, 0%, 8%);
+                    border-color: hsl(0, 0%, 8%);
                 }
             }
         }
