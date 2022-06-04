@@ -243,7 +243,7 @@ nav .nav-menu div ul .company .features li img {
     top: 70px;
     display: none;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     position: absolute;
     background-color: #fff;
     padding: 20px 20px;
@@ -273,8 +273,48 @@ nav .nav-menu div ul .company .features li img {
     border-color: hsl(0deg, 0%, 8%);
   }
 
-  .hero-img {
-    margin-top: 200px;
+  .wrapper {
+    display: flex;
+    width: 80%;
+    gap: 50px;
+    margin: 100px 100px 100px 180px;
+    flex-direction: row-reverse;
+  }
+  .wrapper .hero-img img {
+    width: 30rem;
+  }
+  .wrapper .reading-sec {
+    display: flex;
+    padding-right: 60px;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .wrapper .reading-sec h1 {
+    font-size: 4.5625rem;
+    color: hsl(0deg, 0%, 8%);
+  }
+  .wrapper .reading-sec p {
+    color: hsl(0deg, 0%, 41%);
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 87%;
+  }
+  .wrapper .reading-sec button {
+    font-weight: 800;
+    padding: 14px 0 14px;
+    color: hsl(0deg, 0%, 98%);
+    width: 32%;
+    margin-top: 40px;
+    font-size: 16px;
+    background-color: hsl(0deg, 0%, 8%);
+    border-radius: 15px;
+  }
+  .wrapper .reading-sec div {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 7rem;
   }
 }
 

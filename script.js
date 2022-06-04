@@ -12,6 +12,15 @@ var lis2 = document.querySelector(".company-info").childNodes
 var buttons = document.querySelector(".cta").childNodes
 var navItems = document.querySelector(".nav-menu div ul").childNodes
 var reloadLi = [lis[1], lis[3], lis[5], lis[7], lis2[1], lis2[3], lis2[5], buttons[1], buttons[3], navItems[5], navItems[7]]
+var heroImg = document.querySelector(".hero-img img")
+var imgWrapper = document.querySelector(".hero-img")
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+    heroImg.src = "./images/image-hero-mobile.png"
+} else {
+    heroImg.src = "./images/image-hero-desktop.png"
+    // heroImg.style.width = heroImg.offsetWidth / 2 + 'px'
+}
 
 iconHam.addEventListener("click", function () {
     if (this.classList.contains("ham-menu")) {
