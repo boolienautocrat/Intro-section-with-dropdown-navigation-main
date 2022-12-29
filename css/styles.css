@@ -25,6 +25,7 @@ ul {
 .attribution {
   font-size: 14px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .attribution a {
@@ -63,32 +64,32 @@ ul {
     margin: 0;
   }
   nav .nav-menu div ul .features-div,
-nav .nav-menu div ul .company {
+  nav .nav-menu div ul .company {
     margin: 0;
   }
   nav .nav-menu div ul .features-div ul,
-nav .nav-menu div ul .company ul {
+  nav .nav-menu div ul .company ul {
     display: none;
     margin-top: 30px;
     margin-left: 28px;
     margin-bottom: 10px;
   }
   nav .nav-menu div ul .features-div ul li,
-nav .nav-menu div ul .company ul li {
+  nav .nav-menu div ul .company ul li {
     cursor: pointer;
   }
   nav .nav-menu div ul .features-div > li,
-nav .nav-menu div ul .company > li {
+  nav .nav-menu div ul .company > li {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
   }
   nav .nav-menu div ul .features-div > li img,
-nav .nav-menu div ul .company > li img {
+  nav .nav-menu div ul .company > li img {
     margin-left: 8px;
   }
   nav .nav-menu div ul .features-div .features li img,
-nav .nav-menu div ul .company .features li img {
+  nav .nav-menu div ul .company .features li img {
     margin-right: 10px;
   }
   nav .nav-menu div .cta {
@@ -126,11 +127,9 @@ nav .nav-menu div ul .company .features li img {
     top: 0;
     background: #fff;
   }
-
   .hero-img img {
     width: 100%;
   }
-
   .reading-sec {
     text-align: center;
   }
@@ -181,7 +180,6 @@ nav .nav-menu div ul .company .features li img {
   body {
     background-color: rgb(255, 255, 255);
   }
-
   nav {
     gap: 80px;
     margin: 20px 30px;
@@ -191,7 +189,6 @@ nav .nav-menu div ul .company .features li img {
   nav > img {
     height: fit-content;
   }
-
   .nav-menu > div {
     gap: 94%;
     align-items: center;
@@ -212,23 +209,23 @@ nav .nav-menu div ul .company .features li img {
     color: hsl(0deg, 0%, 8%);
   }
   .nav-menu > div > ul .features-btn,
-.nav-menu > div > ul .company-btn,
-.nav-menu > div > ul .feat-active,
-.nav-menu > div > ul .comp-active {
+  .nav-menu > div > ul .company-btn,
+  .nav-menu > div > ul .feat-active,
+  .nav-menu > div > ul .comp-active {
     cursor: pointer;
     display: flex;
     align-items: center;
   }
   .nav-menu > div > ul .features-btn img,
-.nav-menu > div > ul .company-btn img,
-.nav-menu > div > ul .feat-active img,
-.nav-menu > div > ul .comp-active img {
+  .nav-menu > div > ul .company-btn img,
+  .nav-menu > div > ul .feat-active img,
+  .nav-menu > div > ul .comp-active img {
     margin-left: 5px;
   }
   .nav-menu > div > ul .features-btn:hover,
-.nav-menu > div > ul .company-btn:hover,
-.nav-menu > div > ul .feat-active:hover,
-.nav-menu > div > ul .comp-active:hover {
+  .nav-menu > div > ul .company-btn:hover,
+  .nav-menu > div > ul .feat-active:hover,
+  .nav-menu > div > ul .comp-active:hover {
     color: hsl(0deg, 0%, 8%);
   }
   .nav-menu > div > ul .features {
@@ -238,7 +235,7 @@ nav .nav-menu div ul .company .features li img {
     margin-right: 7px;
   }
   .nav-menu > div > ul .features,
-.nav-menu > div > ul .company-info {
+  .nav-menu > div > ul .company-info {
     border-radius: 10px;
     top: 70px;
     display: none;
@@ -250,7 +247,7 @@ nav .nav-menu div ul .company .features li img {
     box-shadow: 0px 10px 24px 10px rgba(0, 0, 0, 0.14), 0px 16px 30px 10px rgba(0, 0, 0, 0.12), 0px 8px 5px -7px rgba(0, 0, 0, 0.2);
   }
   .nav-menu > div > ul .features li,
-.nav-menu > div > ul .company-info li {
+  .nav-menu > div > ul .company-info li {
     cursor: pointer;
     width: fit-content;
   }
@@ -272,7 +269,6 @@ nav .nav-menu div ul .company .features li img {
     color: hsl(0deg, 0%, 8%);
     border-color: hsl(0deg, 0%, 8%);
   }
-
   .wrapper {
     display: flex;
     width: 80%;
